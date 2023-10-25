@@ -10,9 +10,9 @@ namespace Cinemava.Controllers
 {
     public class ProducersController : Controller
     {
-        private readonly IProducersServices _service;
+        private readonly IProducersService _service;
 
-        public ProducersController(IProducersServices services)
+        public ProducersController(IProducersService services)
         {
             _service = services;
         }

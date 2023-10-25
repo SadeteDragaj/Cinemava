@@ -31,8 +31,9 @@ namespace Cinemava
 
             //Services configuration
             services.AddScoped<IActorsService, ActorsService>(); 
-            services.AddScoped<IProducersServices, ProducersServices>();
+            services.AddScoped<IProducersService, ProducersService>();
             services.AddScoped<ICinemasService, CinemasService>(); 
+            services.AddScoped<IMoviesService, MoviesService>();
             services.AddControllersWithViews();
         }
 

@@ -211,99 +211,99 @@ namespace Cinemava.Data
                     context.SaveChanges();
                 }
                 //Actors & Movies
-                if (!context.Actor_Movies.Any())
+                if (!context.Actors_Movies.Any())
                 {
-                    context.Actor_Movies.AddRange(new List<Actors_Movie>()
+                    context.Actors_Movies.AddRange(new List<Actor_Movies>()
                     {
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 1,
                             MovieId = 1
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 3,
                             MovieId = 1
                         },
 
-                         new Actors_Movie()
+                         new Actor_Movies()
                         {
                             ActorId = 1,
                             MovieId = 2
                         },
-                         new Actors_Movie()
+                         new Actor_Movies()
                         {
                             ActorId = 4,
                             MovieId = 2
                         },
 
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 1,
                             MovieId = 3
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 2,
                             MovieId = 3
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 5,
                             MovieId = 3
                         },
 
 
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 2,
                             MovieId = 4
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 3,
                             MovieId = 4
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 4,
                             MovieId = 4
                         },
 
 
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 2,
                             MovieId = 5
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 3,
                             MovieId = 5
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 4,
                             MovieId = 5
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 5,
                             MovieId = 5
                         },
 
 
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 3,
                             MovieId = 6
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 4,
                             MovieId = 6
                         },
-                        new Actors_Movie()
+                        new Actor_Movies()
                         {
                             ActorId = 5,
                             MovieId = 6

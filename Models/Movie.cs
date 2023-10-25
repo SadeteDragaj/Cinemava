@@ -1,11 +1,12 @@
-﻿using Cinemava.Data.Enums;
+﻿using Cinemava.Data.Base;
+using Cinemava.Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Cinemava.Models
 {
-    public class Movie
+    public class Movie : IEntityBase
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -16,7 +17,7 @@ namespace Cinemava.Models
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory  { get; set; }
         //Relationships
-        public List<Actors_Movie> Actor_Movies{ get; set; }
+        public List<Actor_Movies> Actor_Movies{ get; set; }
         //Cinema
         public int CinemaId { get; set; }
         [ForeignKey("CinemaId")]

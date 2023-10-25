@@ -18,6 +18,6 @@ namespace Cinemava.Models
         [Required(ErrorMessage = "Biography is required")]
         public string Bio { get; set; }
 
-        public List<Actors_Movie> Actor_Movies { get; set; }
+        public List<Actor_Movies> Actor_Movies { get; set; }
     }
 }

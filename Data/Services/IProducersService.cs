@@ -3,7 +3,7 @@ using Cinemava.Models;
 
 namespace Cinemava.Data.Services
 {
-    public interface IProducersServices : IEntityBaseRepository<Producer>
+    public interface IProducersService : IEntityBaseRepository<Producer>
     {
     }
 }

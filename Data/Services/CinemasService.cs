@@ -1,12 +1,18 @@
 ﻿using Cinemava.Data.Base;
+using Cinemava.Data.Services;
+using Cinemava.Data;
 using Cinemava.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Cinemava.Data.Services
 {
-    public class CinemasService : EntityBaseRespository<Cinema>, ICinemasService
+    public class CinemasService : EntityBaseRepository<Cinema>, ICinemasService
     {
-        private readonly AppDbContext _context;
-
-        public CinemasService(AppDbContext context) : base(context){ }
+        public CinemasService(AppDbContext context) : base(context)
+        {
+        }
     }
 }

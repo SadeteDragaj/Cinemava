@@ -1,6 +1,6 @@
 ﻿namespace Cinemava.Models
 {
-    public class Actors_Movie
+    public class Actor_Movies
     {
         public int MovieId { get; set; }
         public Movie Movie { get; set; }
